@@ -234,7 +234,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"pcontainer": "bronze",
-							"pfolder": "cdc",
+							"pfolder": "CDC",
 							"pfile": "cdc.json"
 						}
 					}
