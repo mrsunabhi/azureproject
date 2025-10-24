@@ -70,7 +70,8 @@
 							"Folder": "CDC",
 							"FileName": "cdc.json"
 						}
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
