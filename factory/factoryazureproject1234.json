@@ -1,0 +1,9 @@
+{
+	"name": "factoryazureproject1234",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a07dfe0e-4f72-4c54-af8e-ed83da1e633c",
+		"tenantId": "9ddb4a80-049c-431c-bbf0-b67f64019cf8"
+	}
+}
