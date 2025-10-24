@@ -1,0 +1,23 @@
+{
+	"name": "Azure_SQL_Src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSQLDBSource",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"schema": {
+				"type": "string"
+			},
+			"table": {
+				"type": "string"
+			},
+			"cdc_col": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
