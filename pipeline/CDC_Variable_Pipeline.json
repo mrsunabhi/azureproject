@@ -3,42 +3,6 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "AzureSQLtoDataLake",
-				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"source": {
-						"type": "AzureSqlSource",
-						"queryTimeout": "02:00:00",
-						"partitionOption": {
-							"value": "select *from @{pipeline().parameters.schema}.@{pipeline().parameters.table} where @{pipeline().parameters.cdc_col}",
-							"type": "Expression"
-						},
-						"partitionSettings": {
-							"partitionUpperBound": "",
-							"partitionLowerBound": ""
-						}
-					},
-					"enableStaging": false
-				},
-				"inputs": [
-					{
-						"referenceName": "AzureSQL",
-						"type": "DatasetReference"
-					}
-				]
-			},
-			{
 				"name": "Last_CDC",
 				"type": "Lookup",
 				"dependsOn": [],
@@ -75,17 +39,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"schema": {
-				"type": "string"
-			},
-			"table": {
-				"type": "string"
-			},
-			"cdc_col": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
