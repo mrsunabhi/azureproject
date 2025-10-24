@@ -63,12 +63,12 @@
 						}
 					},
 					"dataset": {
-						"referenceName": "Jason_Dynamic",
+						"referenceName": "Jason_Dynamic1",
 						"type": "DatasetReference",
 						"parameters": {
-							"Container": "Bronze",
-							"Folder": "CDC",
-							"FileName": "cdc.json"
+							"container": "bronze",
+							"folder": "CDC",
+							"file": "cdc.json"
 						}
 					},
 					"firstRowOnly": false
