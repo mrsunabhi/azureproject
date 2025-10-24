@@ -1,0 +1,29 @@
+{
+	"name": "Parquet_Dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataLake",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"pcontainer": {
+				"type": "string"
+			},
+			"pfolder": {
+				"type": "string"
+			},
+			"pfile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
