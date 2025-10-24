@@ -104,7 +104,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"pcontainer": "bronze",
-							"pfolder": "users",
+							"pfolder": {
+								"value": "@pipeline().parameters.table",
+								"type": "Expression"
+							},
 							"pfile": {
 								"value": "@concat(pipeline().parameters.table,'_',variables('current'))",
 								"type": "Expression"
@@ -173,7 +176,7 @@
 										"pfile": "@concat(pipeline().parameters.table,'_',variables('current'))"
 									}
 								},
-								"enableLogging": true,
+								"enableLogging": false,
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
