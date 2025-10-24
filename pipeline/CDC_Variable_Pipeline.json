@@ -169,7 +169,8 @@
 										"pfolder": {
 											"value": "@pipeline().parameters.table",
 											"type": "Expression"
-										}
+										},
+										"pfile": "@concat(pipeline().parameters.table,'_',variables('current'))"
 									}
 								},
 								"enableLogging": true,
