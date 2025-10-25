@@ -355,7 +355,8 @@
 		},
 		"variables": {
 			"current": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "''"
 			}
 		},
 		"annotations": []
