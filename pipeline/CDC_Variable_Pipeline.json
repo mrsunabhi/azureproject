@@ -327,10 +327,8 @@
 					{
 						"activity": "ForEachTableLoad",
 						"dependencyConditions": [
-							"Succeeded",
-							"Skipped",
 							"Failed",
-							"Completed"
+							"Succeeded"
 						]
 					}
 				],
@@ -348,13 +346,6 @@
 					"body": {
 						"value": "{\n    \"pipeline_name\": \"@{pipeline().Pipeline}\",\n    \"pipeline_runid\": \"@{pipeline().RunId}\"\n}",
 						"type": "Expression"
-					},
-					"authentication": {
-						"type": "MSI",
-						"resource": {
-							"value": "@pipeline()?.TriggeredByPipelineRunId",
-							"type": "Expression"
-						}
 					}
 				}
 			}
